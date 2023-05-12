@@ -13,8 +13,8 @@ Ce projet est une application web permettant de télécharger des vidéos à par
 ## Installation
 
 1. Assurez-vous d'avoir Python installé sur votre machine.
-2. Clonez ce dépôt de projet : `git clone https://github.com/yanislabbe/download-youtube-videos-audios.git`.
-3. Accédez au répertoire du projet : `cd download-youtube-videos-audios`.
+2. Clonez ce dépôt de projet : `git clone https://github.com/yanislabbe/telechargement-videos-youtube.git`.
+3. Accédez au répertoire du projet : `cd telechargement-videos-youtube`.
 4. Installez les dépendances requises : `pip install -r requirements.txt`.
 
 ## Utilisation
