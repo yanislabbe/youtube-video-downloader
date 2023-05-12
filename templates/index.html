@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Téléchargement de vidéos/audios YouTube</title>
+    <title>YouTube Video/Audio Downloader</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Téléchargement de vidéos/audios YouTube</h1>
+    <h1>YouTube Video/Audio Downloader</h1>
     <form action="/download" method="POST">
-        <input type="text" name="url" placeholder="Entrez le lien de la vidéo YouTube">
+        <input type="text" name="url" placeholder="Enter the YouTube video link">
         <select name="format">
-            <option value="video">Télécharger la vidéo (MP4)</option>
-            <option value="audio">Télécharger l'audio (MP3)</option>
+            <option value="video">Download Video (MP4)</option>
+            <option value="audio">Download Audio (MP3)</option>
         </select>
-        <input type="submit" value="Télécharger">
+        <input type="submit" value="Download">
     </form>
 </body>
 </html>

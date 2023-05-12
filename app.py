@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, send_file
 from pytube import YouTube
 import os
 
-app = Flask(__name__, static_folder='.', static_url_path='')
+app = Flask(__name__, static_folder='static', template_folder='templates')
 
 @app.route('/')
 def index():
@@ -17,7 +17,7 @@ def download():
     youtube_regex = r'(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([a-zA-Z0-9_-]{11})'
     match = re.match(youtube_regex, video_url)
     if not match:
-        return "Lien YouTube invalide."
+        return "Invalid YouTube link."
 
     try:
         youtube = YouTube(video_url)
@@ -36,9 +36,9 @@ def download():
             os.remove(mp3_filename)
             return response
         else:
-            return "Format de téléchargement invalide."
+            return "Invalid download format."
     except:
-        return "Une erreur est survenue lors du téléchargement."
+        return "An error occurred during download."
 
 if __name__ == '__main__':
     app.run()
