@@ -4,6 +4,14 @@ YouTube Downloader is a web application that allows you to download videos or au
 
 ![Example Screenshot](img/youtube-example.png)
 
+## Demo
+
+1. Access the application in your browser by opening the following URL: [https://yanislabbe.pythonanywhere.com/](https://yanislabbe.pythonanywhere.com/)
+2. Paste the YouTube video link into the text field and select the desired format (video or audio).
+3. Click the "Download" button to download the file.
+
+**Note:** Please be aware that due to the hosting platform limitations, video/audio downloads may not work on the provided link.
+
 ## Features
 
 - Download YouTube videos in MP4 format.
@@ -26,11 +34,10 @@ Before running this application locally, make sure you have the following instal
 
 ## Usage
 
-1. Access the application in your browser by opening the following URL: [https://yanislabbe.pythonanywhere.com/](https://yanislabbe.pythonanywhere.com/)
+1. Access the application in your browser by opening the following URL: `http://localhost:5000/`
 2. Paste the YouTube video link into the text field and select the desired format (video or audio).
 3. Click the "Download" button to download the file.
-
-**Note:** Please be aware that due to the hosting platform limitations, video/audio downloads may not work on the provided link.
+4. The file will be downloaded to your computer.
 
 ## Project Structure
 
