@@ -19,7 +19,8 @@ Before running this application locally, make sure you have the following instal
 
 1. Clone this GitHub repository to your local machine: `git clone https://github.com/yanislabbe/youtube-video-downloader.git`
 2. Navigate to the project directory: `cd youtube-video-downloader`
-3. Run the application by executing the `youtube.py` file: `python youtube.py`
+3. Install the required dependencies by running the following command: `pip install -r requirements.txt`
+4. Run the application by executing the `youtube.py` file: `python youtube.py`
 
 ## Usage
 
