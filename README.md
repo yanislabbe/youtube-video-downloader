@@ -1,31 +1,45 @@
-# YouTube Video Downloader
+# YouTube Downloader
 
-This project is a web application that allows users to download videos from YouTube. It is developed using the Flask framework and the pytube library.
+YouTube Downloader is a simple web application that allows you to download videos or audio files from YouTube.
 
 ## Features
 
-- Users can enter the link of a YouTube video in a form.
-- The application verifies that the link is valid and corresponds to a YouTube video.
-- Users can choose to download the complete video (in MP4 format) or only the audio (in MP3 format).
-- The application downloads the video from YouTube in the best available quality.
-- Users can then download the video or audio file.
+- Download YouTube videos in MP4 format.
+- Download YouTube audio files in MP3 format.
+
+## Prerequisites
+
+Before running this application locally, make sure you have the following installed on your machine:
+
+- Python 3.x: [Download Python](https://www.python.org/downloads/)
+- Flask: You can install it by running the following command: 'pip install flask'
+- pytube: You can install it by running the following command: 'pip install pytube'
 
 ## Installation
 
-1. Make sure you have Python installed on your machine.
-2. Clone this project repository: `git clone https://github.com/yanislabbe/youtube-video-downloader.git`.
-3. Navigate to the project directory: `cd youtube-video-downloader`.
-4. Install the required dependencies: `pip install -r requirements.txt`.
+1. Clone this GitHub repository on your local machine: 'git clone https://github.com/yanislabbe/youtube-video-downloader.git'
+2. Navigate to the project directory: 'cd youtube-video-downloader'
+3. Run the application by executing the `youtube.py` file: 'python youtube.py'
 
 ## Usage
 
-1. Run the application: `python app.py`.
-2. Access the URL `http://localhost:5000` in your browser.
-3. Enter the link of a YouTube video in the text field.
-4. Choose the desired download option (video or audio).
-5. Click the "Download" button.
-6. Wait for the download to complete.
-7. You can then download the generated video or audio file.
+1. Access the application in your browser by opening the following URL: `http://localhost:5000/`
+2. Paste the YouTube video link into the text field and select the desired format (video or audio).
+3. Click the "Download" button to download the file.
+4. The file will be downloaded to your computer.
+
+## Project Structure
+
+The project is structured as follows:
+
+- `youtube.py`: the main file containing the application logic and Flask routes.
+- `templates`: this directory contains the `youtube.html` file that defines the structure of the web page.
+- `static`: this directory contains the CSS (`youtube.css`) and JavaScript (`youtube.js`) files used for styling and web page functionality.
+- `tmp`: this directory is used to temporarily store the downloaded files before sending them as a response.
+
+## Contributions
+
+Contributions to this project are welcome. If you would like to add features, fix bugs, or improve the documentation, feel free to create a pull request.
 
 ## Disclaimer
 
@@ -33,6 +47,8 @@ This application is intended for personal use and should not be used to infringe
 
 ## Author
 
-Yanis Labbé
+[yanislabbe](https://github.com/yanislabbe)
 
-Feel free to contact me for any questions or suggestions.
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Please see the `LICENSE` file for more information.

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video/Audio Downloader</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='youtube.css') }}">
+    <script src="{{ url_for('static', filename='youtube.js') }}"></script>
+</head>
+<body>
+    <h1>YouTube Video/Audio Downloader</h1>
+    <form action="/download" method="POST" onsubmit="return validateForm()">
+        <div class="form-group">
+            <input type="text" name="url" id="url" placeholder="Paste your YouTube video link here" required>
+            <button type="button" onclick="clearUrlInput()">Clear</button>
+        </div>
+        <select name="format">
+            <option value="video">Format Video (MP4)</option>
+            <option value="audio">Format Audio (MP3)</option>
+        </select>
+        <div id="progress-bar"></div>
+        <input type="submit" value="Download">
+    </form>
+</body>
+</html>
