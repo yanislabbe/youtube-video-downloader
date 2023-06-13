@@ -1,6 +1,6 @@
 # YouTube Downloader
 
-YouTube Downloader is a simple web application that allows you to download videos or audio files from YouTube.
+YouTube Downloader is a web application that allows you to download videos or audio files from YouTube.
 
 ## Features
 
@@ -17,25 +17,26 @@ Before running this application locally, make sure you have the following instal
 
 ## Installation
 
-1. Clone this GitHub repository on your local machine: `git clone https://github.com/yanislabbe/youtube-video-downloader.git`
+1. Clone this GitHub repository to your local machine: `git clone https://github.com/yanislabbe/youtube-video-downloader.git`
 2. Navigate to the project directory: `cd youtube-video-downloader`
 3. Run the application by executing the `youtube.py` file: `python youtube.py`
 
 ## Usage
 
-1. Access the application in your browser by opening the following URL: `http://localhost:5000/`
+1. Access the application in your browser by opening the following URL: [https://yanislabbe.pythonanywhere.com/](https://yanislabbe.pythonanywhere.com/)
 2. Paste the YouTube video link into the text field and select the desired format (video or audio).
 3. Click the "Download" button to download the file.
-4. The file will be downloaded to your computer.
+
+**Note:** Please be aware that due to the hosting platform limitations, video/audio downloads may not work on the provided link.
 
 ## Project Structure
 
-The project is structured as follows:
+The project structure is as follows:
 
-- `youtube.py`: the main file containing the application logic and Flask routes.
-- `templates`: this directory contains the `youtube.html` file that defines the structure of the web page.
-- `static`: this directory contains the CSS (`youtube.css`) and JavaScript (`youtube.js`) files used for styling and web page functionality.
-- `tmp`: this directory is used to temporarily store the downloaded files before sending them as a response.
+- `youtube.py`: The main file containing the application logic and Flask routes.
+- `templates`: This directory contains the `youtube.html` file that defines the structure of the web page.
+- `static`: This directory contains the CSS (`youtube.css`) and JavaScript (`youtube.js`) files used for styling and web page functionality.
+- `tmp`: This directory is used to temporarily store the downloaded files before sending them as a response.
 
 ## Contributions
 
