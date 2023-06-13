@@ -2,7 +2,7 @@
 
 YouTube Downloader is a web application that allows you to download videos or audio files from YouTube.
 
-![Example Screenshot](img/example.png)
+![Example Screenshot](img/youtube-example.png)
 
 ## Features
 
